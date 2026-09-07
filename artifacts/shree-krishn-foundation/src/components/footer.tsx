@@ -1,4 +1,4 @@
-import { Heart, Mail, MapPin, Phone } from 'lucide-react';
+import { Heart, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -44,17 +44,14 @@ export function Footer() {
           <div>
             <h4 className="font-serif font-bold text-xl mb-6">Contact Us</h4>
             <ul className="space-y-4 text-background/70">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
-                <span>123 Seva Marg, Community District,<br />New Delhi, India</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>+91 98765 43210</span>
-              </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>namaste@shreekrishn.org</span>
+                <a
+                  href="mailto:shreekrishnfoundation@gmail.com"
+                  className="break-all hover:text-primary transition-colors"
+                >
+                  shreekrishnfoundation@gmail.com
+                </a>
               </li>
             </ul>
           </div>
