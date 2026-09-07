@@ -7,7 +7,7 @@ export function DonateSection() {
   const [customAmount, setCustomAmount] = useState('');
   const [showPayment, setShowPayment] = useState(false);
   const [copied, setCopied] = useState(false);
-  const upiId = 'jazment@ybl';
+  const upiId = 'shreekrishnfounndation@ptaxis';
   const amounts = [200, 500, 1000, 2500, 'other'] as const;
   const payableAmount = amount === 'other' ? Number(customAmount) : amount;
 
