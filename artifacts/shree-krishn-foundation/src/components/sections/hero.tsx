@@ -27,7 +27,7 @@ export function HeroSection() {
             
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mt-4">
               <Button asChild size="lg" className="w-full sm:w-auto rounded-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg shadow-[0_8px_30px_rgb(234,88,12,0.3)] transition-transform hover:-translate-y-1">
-                <a href="#donate">Support Our Work</a>
+                <a href="#donate">Donate Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full sm:w-auto rounded-full px-8 py-6 text-lg border-2 border-primary/20 hover:border-primary/50 text-foreground group transition-all hover:bg-transparent">
                 <a href="#mission">
