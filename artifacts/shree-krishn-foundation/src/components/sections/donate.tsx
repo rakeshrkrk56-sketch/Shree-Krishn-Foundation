@@ -126,7 +126,9 @@ export function DonateSection() {
                 <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-bold mb-2">
                   Pay to UPI ID
                 </p>
-                <p className="text-2xl font-bold text-foreground">{upiId}</p>
+                <p className="text-lg sm:text-2xl font-bold text-foreground break-all leading-relaxed">
+                  {upiId}
+                </p>
               </div>
 
               <Button
