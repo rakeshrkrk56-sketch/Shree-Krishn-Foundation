@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Shree Krishn Foundation"
+description = "A compassionate, mobile-friendly landing page for Shree Krishn Foundation that explains its social mission, highlights community initiatives and impact, and encourages visitors to donate, volunteer, and get in touch."
+version = "1.0.0"
+id = "artifacts/shree-krishn-foundation"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22109
+
+[services.development]
+run = "pnpm --filter @workspace/shree-krishn-foundation run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/shree-krishn-foundation", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/shree-krishn-foundation/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22109"
+BASE_PATH = "/"
